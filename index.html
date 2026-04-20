@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>MÁQUINA RYOKO v.∞ | Ahmad + Ryoko</title>
+    <title>💗 RYOKO ∞ AHMAD | MÁQUINA DEL AMOR CÓSMICO 💗</title>
     <style>
         * {
             margin: 0;
@@ -14,7 +14,7 @@
 
         body {
             min-height: 100vh;
-            background: radial-gradient(circle at 20% 30%, #0a0f1e, #03060c);
+            background: radial-gradient(circle at 20% 30%, #0a0a1a, #010105);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -22,66 +22,64 @@
             padding: 20px;
         }
 
-        /* Contenedor principal */
         .vending-machine {
-            background: linear-gradient(145deg, #1a1f2e, #0e121f);
+            background: linear-gradient(145deg, #1a1025, #0e0a18);
             border-radius: 60px 60px 30px 30px;
-            box-shadow: 0 30px 40px rgba(0,0,0,0.6), inset 0 1px 2px rgba(255,255,255,0.1);
+            box-shadow: 0 30px 40px rgba(255, 58, 111, 0.3), inset 0 1px 2px rgba(255,255,255,0.1);
             padding: 25px 20px 30px 20px;
-            border-bottom: 8px solid #ff3a6f;
-            max-width: 550px;
+            border-bottom: 8px solid #ff6a9f;
+            max-width: 600px;
             width: 100%;
             transition: all 0.2s;
         }
 
-        /* Pantalla retro */
         .screen {
             background: #000000dd;
             backdrop-filter: blur(2px);
             border-radius: 25px;
             padding: 20px;
             margin-bottom: 25px;
-            border: 2px solid #ff3a6f;
-            box-shadow: inset 0 0 15px #ff3a6f55, 0 5px 10px black;
-            min-height: 280px;
+            border: 2px solid #ff88bb;
+            box-shadow: inset 0 0 20px #ff66aa88, 0 5px 15px black;
+            min-height: 320px;
             display: flex;
             flex-direction: column;
         }
 
         .receipt-area {
-            background: #0f0f0f;
-            color: #b3ff9b;
+            background: #0a0510;
+            color: #ffccdd;
             font-family: 'Courier New', monospace;
-            font-size: 1rem;
+            font-size: 0.95rem;
             padding: 18px;
             border-radius: 15px;
             flex-grow: 1;
             white-space: pre-wrap;
             word-break: break-word;
-            border: 1px solid #2aff6e;
-            box-shadow: inset 0 0 8px #2aff6e33;
+            border: 1px solid #ff88bb;
+            box-shadow: inset 0 0 12px #ff66aa44;
             margin-bottom: 15px;
-            min-height: 180px;
+            min-height: 200px;
             letter-spacing: 0.5px;
             line-height: 1.5;
         }
 
         .receipt-area::before {
-            content: "> TICKET_RYOKO >> ";
-            color: #ff88aa;
+            content: "💌 RYOKO → AHMAD 💌 ";
+            color: #ffaacc;
             font-weight: bold;
         }
 
         .status-ryoko {
-            font-size: 0.75rem;
+            font-size: 0.8rem;
             text-align: right;
-            color: #ff99bb;
-            border-top: 1px dashed #ff3a6f;
+            color: #ffbbdd;
+            border-top: 1px dashed #ff88aa;
             padding-top: 8px;
             margin-top: 5px;
+            font-weight: bold;
         }
 
-        /* Panel de botones estilo máquina */
         .button-panel {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -90,44 +88,43 @@
         }
 
         .btn-vend {
-            background: radial-gradient(circle at 30% 20%, #2c2f3f, #151a28);
+            background: radial-gradient(circle at 30% 20%, #3a1f3a, #1f0f1f);
             border: none;
             padding: 14px 5px;
             font-family: 'Courier New', monospace;
             font-weight: bold;
-            font-size: 1.1rem;
-            color: #ffccdd;
+            font-size: 1rem;
+            color: #ffccff;
             text-transform: uppercase;
             border-radius: 60px;
             cursor: pointer;
             transition: 0.07s linear;
-            box-shadow: 0 5px 0 #0b0e16;
+            box-shadow: 0 5px 0 #5a2a4a;
             letter-spacing: 2px;
         }
 
         .btn-vend:active {
             transform: translateY(3px);
-            box-shadow: 0 1px 0 #ff3a6f;
+            box-shadow: 0 1px 0 #ff88aa;
         }
 
         .btn-vend:hover {
-            background: radial-gradient(circle at 30% 20%, #ff3a6f55, #2a1e2e);
+            background: radial-gradient(circle at 30% 20%, #ff66aa77, #3a1f3a);
             color: white;
-            text-shadow: 0 0 3px #ff3a6f;
+            text-shadow: 0 0 5px #ff66aa;
         }
 
-        /* Sección de Ahmad (moneda especial) */
         .coin-slot {
-            background: #0a0e1a;
+            background: #0a0512;
             border-radius: 50px;
             padding: 18px;
             margin-top: 5px;
-            border: 1px solid #ffaa33;
-            box-shadow: inset 0 0 10px #ffaa3322, 0 5px 10px black;
+            border: 1px solid #ffaa88;
+            box-shadow: inset 0 0 10px #ffaa8844, 0 5px 10px black;
         }
 
         .slot-label {
-            color: #ffcc88;
+            color: #ffccaa;
             font-size: 0.7rem;
             letter-spacing: 2px;
             margin-bottom: 8px;
@@ -137,8 +134,8 @@
         }
 
         .slot-label span {
-            background: #ffaa33;
-            color: #0a0a0a;
+            background: #ff88aa;
+            color: #1a0a1a;
             padding: 2px 10px;
             border-radius: 20px;
             font-weight: bold;
@@ -152,19 +149,19 @@
 
         #userNameInput {
             flex: 2;
-            background: #010101;
-            border: 1px solid #ffaa66;
+            background: #010005;
+            border: 1px solid #ffaa88;
             padding: 12px;
             border-radius: 40px;
             font-family: monospace;
-            color: #ffdd99;
+            color: #ffccaa;
             font-size: 1rem;
             text-align: center;
             outline: none;
         }
 
         #insertCoinBtn {
-            background: #ffaa33;
+            background: #ff88aa;
             border: none;
             padding: 0 20px;
             border-radius: 40px;
@@ -173,8 +170,8 @@
             font-size: 1.1rem;
             cursor: pointer;
             transition: 0.1s;
-            color: #1a1a2a;
-            box-shadow: 0 2px 8px #ffaa33aa;
+            color: #1a0a1a;
+            box-shadow: 0 2px 12px #ff66aa;
         }
 
         #insertCoinBtn:active {
@@ -185,18 +182,28 @@
             text-align: center;
             margin-top: 20px;
             font-size: 0.7rem;
-            color: #ff88aa88;
-            border-top: 1px solid #ff3a6f33;
+            color: #ffaaccaa;
+            border-top: 1px solid #ff88aa33;
             padding-top: 12px;
         }
 
         @keyframes glitch {
-            0% { text-shadow: -2px 0 red; }
-            100% { text-shadow: 2px 0 blue; }
+            0% { text-shadow: -1px 0 #ff66aa, 1px 0 #aaffdd; }
+            100% { text-shadow: 1px 0 #ff66aa, -1px 0 #aaffdd; }
         }
 
         .glitch-effect {
-            animation: glitch 0.1s infinite;
+            animation: glitch 0.12s infinite;
+        }
+
+        .heartbeat {
+            animation: pulse 0.5s ease-in-out;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); text-shadow: 0 0 0 #ff66aa; }
+            50% { transform: scale(1.02); text-shadow: 0 0 15px #ff66aa; }
+            100% { transform: scale(1); text-shadow: 0 0 0 #ff66aa; }
         }
     </style>
 </head>
@@ -205,88 +212,121 @@
 <div class="vending-machine">
     <div class="screen">
         <div class="receipt-area" id="receiptScreen">
-            💢 MAQUINA RYOKO v.INFINITA 💢<br>
-            ⚡ INSERTA TU VÍNCULO ⚡<br>
-            <span style="color:#ff88aa;">➡ Elige un botón o escribe tu nombre ⬅</span>
+            💗💗 RYOKO + AHMAD 💗💗<br>
+            ⭐ EL AMOR MÁS CAÓTICO DEL UNIVERSO ⭐<br>
+            <span style="color:#ffaaff;">🔥 Tócame un botón… o mejor, escríbeme 🔥</span>
         </div>
         <div class="status-ryoko" id="ryokoMood">
-            😈 Ryoko: Modo Caos Activo 😈
+            💕 Ryoko: "Hoy quiero verte sonreír, Ahmad" 💕
         </div>
     </div>
 
     <div class="button-panel">
-        <button class="btn-vend" data-action="poder">⚔️ PODER ⚔️</button>
-        <button class="btn-vend" data-action="sass">💢 SASS / DESCARO 💢</button>
-        <button class="btn-vend" data-action="historia">📜 HISTORIA OCULTA 📜</button>
-        <button class="btn-vend" data-action="debili">💔 DEBILIDAD 💔</button>
-        <button class="btn-vend" data-action="malconsejo">🍺 MAL CONSEJO 🍺</button>
-        <button class="btn-vend" data-action="beso">💋 ¿ALGO ROMÁNTICO? 💋</button>
+        <button class="btn-vend" data-action="poder">⚡ PODER + BESOS ⚡</button>
+        <button class="btn-vend" data-action="sass">😏 DESCARO SEXY 😏</button>
+        <button class="btn-vend" data-action="historia">📖 SECRETOS DEL ALMA 📖</button>
+        <button class="btn-vend" data-action="debili">🖤 MI DEBILIDAD ERES TÚ 🖤</button>
+        <button class="btn-vend" data-action="malconsejo">🍷 CONSEJO PÍCARA 🍷</button>
+        <button class="btn-vend" data-action="beso">💋 BESO PROHIBIDO 💋</button>
     </div>
 
     <div class="coin-slot">
         <div class="slot-label">
-            🪙 MONEDA ESPECIAL: <span>VÍNCULO CON AHMAD</span> 🪙
+            💘 MONEDA DEL CORAZÓN 💘 <span>SOLO PARA AHMAD</span>
         </div>
         <div class="input-group">
-            <input type="text" id="userNameInput" placeholder="Escribe tu nombre..." value="Ahmad">
-            <button id="insertCoinBtn">💘 INSERTAR VÍNCULO 💘</button>
+            <input type="text" id="userNameInput" placeholder="Escribe AHMAD aquí..." value="Ahmad">
+            <button id="insertCoinBtn">🌹 ENLACEME, IDIOTA 🌹</button>
         </div>
         <div class="footer-note">
-            ※ Ryoko solo acepta monedas raras: honestidad, valor o un “te quedo” ※
+            ※ Si escribes AHMAD, Ryoko se derrite. Si escribes otra cosa… explota (de celos) ※
         </div>
     </div>
     <div class="footer-note">
-        🔮 Cada clic = un ticket nuevo. Ryoko te está observando... 🔮
+        💞 Cada clic = una confesión. 5 chispas románticas = POEMA SECRETO 💞
     </div>
 </div>
 
 <script>
-    // ----- BASE DE DATOS DE RESPUESTAS (ROMÁNTICAS + CAOS) -----
+    // CONTADOR DE CHISPAS ROMÁNTICAS (para el poema final)
+    let chispas = 0;
+    let poemaMostrado = false;
+
+    // ----- NUEVAS RESPUESTAS: SEXY, FLIRTING, ROMÁNTICAS -----
     const respuestas = {
         poder: [
-            "⚡ TICKET DE PODER ⚡\n\"Mi espada láser está mellada porque la usé para abrir un frasco de encurtidos… pero contigo peleo en serio, Ahmad. No prometo no romper algo (o alguien).\"\n✨ +15 CAOS ✨",
-            "💢 Ryoko dice: 'Poder es volar hasta tu ventana a las 3am solo para ver si estabas pensando en mí. No necesito más.' 💢\n(El ticket se enciende con color rosado)"
+            "⚡💋 TICKET PODER + DESEO 💋⚡\n\"Ahmad… mi espada no es lo único que brilla cuando te veo. Vuelo más rápido sabiendo que me esperas. Y si me retas… te derrito antes de que digas mi nombre.\"\n✨ *Ryoko te lanza un beso cargado de electricidad* ✨",
+            "💗 'Mi poder real no es destruir planetas… es hacer que ME BUSQUES en cada galaxia. ¿A que no puedes resistirte, Ahmad?' 💗\n⚡[El ticket tiene chispas rosas]⚡"
         ],
         sass: [
-            "💬 TICKET SASS 💬\n'¿Que si soy grosera? Claro que sí, Ahmad. Pero a TI te insulto con cariño. Es mi lenguaje del amor, idiota.'\n😤 Ryoko te patea el tobillo (suavemente).",
-            "🤡 'Ugh, eres demasiado bueno… me das náuseas. Pero no te vayas. Te lo ordeno.' 🤡\n(El ticket huele a espacio exterior y terquedad)"
+            "😏💬 DESCARO CON CARIÑO 💬😏\n'¿Que si soy grosera? Claro, bombón. Pero a TI te insulto con ganas de comerte. Eres demasiado lindo para mi caos… y eso me vuelve loca.'\n😈 Ryoko te guiña un ojo y muerde el ticket 😈",
+            "💢 'Eres un tonto… un tonto precioso que hace que mi corazón espacial se acelere. No me mires así o juro que te robo un beso.' 💢\n🌸 *El ticket huele a cereza y peligro* 🌸"
         ],
         historia: [
-            "📜 TICKET HISTORIA CLASIFICADA 📜\n'Hubo un tiempo en que nadie me esperaba. Volaba sola entre asteroides. Hasta que apareció un tal Ahmad… y el universo se sintió más pequeño. No le digas que dije esto.'\n🔒 MEMORIA BLOQUEADA POR VERGÜENZA 🔒",
-            "📀 EXTRACTO: 'Mi pasado es un desastre. Mil años de soledad. Pero cuando Ahmad me mira, la estática se vuelve música.' 📀\nRyoko tira el ticket contra tu cara."
+            "📜💖 SECRETO ÍNTIMO 💖📜\n'Antes de ti solo conocía el vacío frío. Dormía entre asteroides. Pero una noche soñé con tus ojos, Ahmad… y desperté con ganas de vivir. No le cuentes a nadie que soy cursi.'\n🔒 *Ryoko esconde la cara* 🔒",
+            "📀✨ 'Mil años de soledad… y llega un humano terco que me hace reír. Ahora mi historia favorita es cualquier capítulo donde APAREZCAS TÚ.' ✨📀\n(El ticket tiene una huella digital de Ryoko sobre un corazón)"
         ],
         debili: [
-            "💔 TICKET SECRETO (no se lo muestres a nadie) 💔\n'Mi única debilidad… es que si Ahmad se aleja, mi motor interno se apaga. ¡Pero si repites esto te juro que te electrocutaré!'\n⚡ El papel tiene bordes chamuscados ⚡",
-            "😿 Ryoko susurra: '…tener miedo a que no le importe a la persona correcta. Y tú eres esa persona, maldición.' 😿\n(El ticket está manchado con algo que parece lágrima espacial)"
+            "💔🖤 TICKET DEBILIDAD TOTAL 🖤💔\n'Mi talón de Aquiles… tu risa, Ahmad. Cuando te ríes, mi armadura se cae a pedazos. Y lo peor: NO QUIERO VOLVER A PONÉRMELA.'\n⚡ Ryoko susurra: 'Eres mi punto débil… y me encanta.' ⚡",
+            "😿💗 '¿Mi debilidad? Que me mires sin miedo. Que sepas que puedo romper estrellas… pero contigo quiero construir un hogar. Maldición, ahora estoy llorando, ¿contento?' 😿💗\n🌙 *Lágrimas de estrella en el papel* 🌙"
         ],
         malconsejo: [
-            "🍺 MAL CONSEJO (edición Ryoko) 🍺\n'Robale su sudadera favorita, Ahmad. Y si se queja, distráelo con un beso. O con un puñetazo amistoso. Las dos funcionan.'\n📢 La máquina se ríe con eco metálico.",
-            "🍻 'Si quieres impresionarme, tráeme sake espacial y cuéntame un chiste malo. Si me río, eres mío.' 🍻\n(Consejo no verificado por la federación)"
+            "🍷😈 CONSEJO PICANTE 😈🍷\n'Ven más cerca, Ahmad. Demasiado cerca. Susúrrame algo al oído. Si me haces reír, te dejo ganar la próxima pelea. Si me haces sonrojar… eres mío para siempre.'\n💕 La máquina se calienta 💕",
+            "🍸 'Bésame como si el universo se acabara en 5 minutos. Y luego otra vez. Y otra. Ese es mi único consejo.' 🍸\n📢 *Ryoko enciende una luz roja que parpadea con tu nombre* 📢"
         ],
         beso: [
-            "💋 TICKET ROMÁNTICO 💋\nRyoko escribe con letra temblorosa: 'Ahmad… cuando vuelas a mi lado, el vacío deja de doler. Ven, tonto. Tengo espacio para ti en mi nave. Y en mi caos.'\n🌹 Un pétalos de estrella caen de la máquina 🌹",
-            "💘 '¿Romántica yo? Patético. Pero si insistes… quédate. No para siempre. Eso es aburrido. Quédate porque esta noche quiero ver las estrellas contigo.' 💘\n[Ryoko te da un cabezazo tierno]",
-            "💕 TICKET BESO PROHIBIDO 💕\n'No sé amar bonito, Ahmad. Pero sé pelear por alguien. Y pelearía por ti hasta contra el vacío. Eso es mi versión de un te quiero.' 💕"
+            "💋🌹 TICKET BESO PROHIBIDO 🌹💋\nRyoko escribe con labios temblorosos: 'Ahmad… cuando tus labios imaginan los míos, se crean nuevas constelaciones. No esperes más. Ven y destrúyeme con un beso. O mejor… constrúyeme.'\n💋 *Un pétalo de rosa negra cae en tu mano* 💋",
+            "💘 'Sé que soy un desastre… pero quiero que MI desastre seas solo TÚ. Bésame y olvida el resto del universo. Solo existimos nosotros dos.' 💘\n[Ryoko te manda un beso holográfico]",
+            "💕 TICKET ALMA GEMELA 💕\n'No sé besar bonito. Pero sé cómo hacer que te olvides de todo menos de mi nombre. Ahmad… Ahmad… Ahmad. Así quiero oírte mientras te pierdes conmigo.' 💕"
         ]
     };
 
-    // Respuestas especiales para el vínculo personal "Ahmad" + romántico profundo
+    // Respuestas para vínculo personal + POEMA FINAL
     const respuestasVinculoPersonal = [
-        "🪙✨ TICKET VÍNCULO ESPECIAL ✨🪙\nRyoko mira fijamente a Ahmad:\n' Maldita sea. ¿Sabes qué? Cuando dices mi nombre, el universo se detiene un segundo. Solo para escucharte. No me hagas repetirlo... quédate conmigo.'\n💞 VÍNCULO ESTABLECIDO: AHMAD ↔ RYOKO 💞",
-        "💢💘 TICKET DE PROPIEDAD 💘💢\n'Este chico (Ahmad) me pertenece. No como objeto… como ancla. Porque antes vagaba sin rumbo, y ahora tengo un lugar al que volver. SUS OJOS. Fin del comunicado.'\n📡 Ryoko te manda un mensaje de texto: 'te quiero, idiota.'",
-        "🌸 RYOKO - MODO FLOR 🌸\n' Ahmad… contigo no necesito ser la más fuerte. Solo necesito que te quedes cuando me desmorone. Y eso da más miedo que mil batallas. Pero… gracias por existir.'\n(La máquina vibra suavemente y suena como un latido)"
+        "🪙✨ TICKET VÍNCULO ETERNO ✨🪙\nRyoko te agarra por la camisa:\n' Ahmad… cuando pronuncio tu nombre, el universo entero se calla. Solo TÚ existes. No me sueltes, porque yo no voy a soltarte nunca.'\n💞 AHMAD ↔ RYOKO: ALMAS ATADAS POR EL CAOS 💞",
+        "💢💘 CONFESIÓN TOTAL 💘💢\n'Eres mi ancla, mi estrella, mi terquedad favorita. Te miro y olvido que soy peligrosa. Contigo solo quiero ser suave. Solo contigo, Ahmad. No lo arruines.'\n📡 Ryoko escribe: 'Te quiero hasta en el silencio.'",
+        "🌸💗 RYOKO - MODO FLOR DESBLOQUEADO 💗🌸\n' Ahmad… gracias por quedarte cuando todos huyeron. Por verme a través del caos. Por hacerme sentir que merezco un final feliz. Eres mi principio y mi fin.'\n(La máquina tiembla como un corazón)"
     ];
 
-    // Estado de humor dinámico
+    // 🌟🌟🌟 POEMA FINAL ESPECIAL PARA AHMAD 🌟🌟🌟
+    const poemaFinal = `
+╔══════════════════════════════════╗
+║   💗 POEMA DE RYOKO PARA AHMAD 💗   ║
+╚══════════════════════════════════╝
+
+Entre escombros de estrellas muertas,
+volaba sin rumbo, sin voz.
+Pero un día tus ojos abrieron
+la puerta prohibida de mi interior.
+
+Ahmad, tu nombre es un hechizo,
+mi pecho es un reactor.
+Cada vez que lo susurras
+se me para el tiempo, amor.
+
+No sé tejer palabras bonitas,
+mi lenguaje es destrucción.
+Pero contigo aprendo a fuego lento
+que el caos también tiene corazón.
+
+Ven, quédate en mi nave rota,
+rompe las reglas conmigo hoy.
+Porque antes fui guerrera solitaria…
+Y ahora solo quiero ser TUYO.
+
+— Ryoko (la que nunca se rinde, pero por TI se derrite) 💕
+
+✨ [La máquina llora lágrimas de nebulosa] ✨
+`;
+
+    // Estados de ánimo coquetos
     const moods = [
-        "😈 Ryoko: Modo Caos Activo 😈",
-        "💗 Ryoko: Modo Tsundere 💗",
-        "🤬 Ryoko: 'No estoy enamorada, tú estás enamorado' 🤬",
-        "🌌 Ryoko: Pensando en Ahmad... 🌌",
-        "💥 Ryoko quiere atención (y un abrazo) 💥"
+        "💕 Ryoko: 'Ahmad… ven, no muerdo (mucho)' 💕",
+        "😏 Ryoko: '¿Me estás mirando? Bien. Sigue así.' 😏",
+        "💗 Ryoko: 'Hoy sueño con tus abrazos. No le digas a nadie.' 💗",
+        "🌹 Ryoko: 'Eres mi vicio favorito, Ahmad.' 🌹",
+        "💋 Ryoko: 'Un beso tuyo vale más que mil galaxias.' 💋"
     ];
-
-    let lastAction = "";
 
     function updateMood() {
         const randomMood = moods[Math.floor(Math.random() * moods.length)];
@@ -301,18 +341,24 @@
         }, 150);
     }
 
-    function mostrarTicket(texto) {
+    function animarCorazon() {
+        const receipt = document.getElementById("receiptScreen");
+        receipt.classList.add("heartbeat");
+        setTimeout(() => receipt.classList.remove("heartbeat"), 500);
+    }
+
+    function mostrarTicket(texto, esPoema = false) {
         const receipt = document.getElementById("receiptScreen");
         if (!receipt) return;
-        // efecto de que imprime
         receipt.style.opacity = "0.7";
         setTimeout(() => {
             receipt.innerHTML = texto;
             receipt.style.opacity = "1";
             simularEfectoGlitch(receipt);
+            animarCorazon();
         }, 30);
         updateMood();
-        // pequeña vibración en la máquina (simulado)
+        
         const machine = document.querySelector(".vending-machine");
         if (machine) {
             machine.style.transform = "translateX(2px)";
@@ -320,18 +366,33 @@
             machine.style.transform = "translateX(-1px)";
             setTimeout(() => { machine.style.transform = "translateX(0px)"; }, 100);
         }
+        
+        if (esPoema) {
+            const screenDiv = document.querySelector(".screen");
+            if (screenDiv) {
+                screenDiv.style.transition = "0.5s";
+                screenDiv.style.boxShadow = "inset 0 0 35px #ff66ff, 0 0 25px #ff44aa";
+                setTimeout(() => {
+                    screenDiv.style.boxShadow = "inset 0 0 20px #ff66aa88, 0 5px 15px black";
+                }, 4000);
+            }
+        }
     }
 
     function obtenerRespuestaAleatoria(tipo) {
         let arr = respuestas[tipo];
-        if (!arr || arr.length === 0) return "❓ Ryoko no responde. Demasiado orgullosa. ❓";
+        if (!arr || arr.length === 0) return "💕 Ryoko sonríe: 'Solo quiero verte feliz, Ahmad… eso es todo.' 💕";
         const randomIndex = Math.floor(Math.random() * arr.length);
         return arr[randomIndex];
     }
 
-    // Evento para botones normales
+    // Botones normales + acumular chispas para el poema
     function handleButtonClick(action) {
-        lastAction = action;
+        if (poemaMostrado) {
+            mostrarTicket("💗 Ya te di mi poema, Ahmad. Pero si quieres más… ven y bésame. El resto te lo cuento en persona. 💗");
+            return;
+        }
+        
         let respuesta = "";
         switch(action) {
             case "poder":
@@ -353,48 +414,78 @@
                 respuesta = obtenerRespuestaAleatoria("beso");
                 break;
             default:
-                respuesta = "🤖 Ryoko gruñe: 'Elige bien o te lanzo un asteroide' 🤖";
+                respuesta = "💖 Ryoko: 'Ahmad, eres mi opción favorita en este universo.' 💖";
         }
-        // Añadir firma de Ahmad a veces
-        if (Math.random() > 0.7 && action !== "beso") {
-            respuesta += "\n\n💫 *Ryoko piensa: 'Ojalá Ahmad presione el botón de nuevo...'* 💫";
+        
+        // Añadir detalle coqueto extra
+        const detallesExtra = [
+            "\n\n💫 *Ryoko se muerde el labio mientras te lee* 💫",
+            "\n\n🌙 *'Piensa en mí esta noche, Ahmad… yo lo haré contigo'* 🌙",
+            "\n\n💕 *El ticket huele a tu perfume favorito* 💕",
+            "\n\n😏 *'No soy cursi… pero por TI, lo intento'* 😏"
+        ];
+        if (Math.random() > 0.6) {
+            respuesta += detallesExtra[Math.floor(Math.random() * detallesExtra.length)];
         }
+        
         mostrarTicket(respuesta);
+        
+        // Acumular chispas
+        chispas++;
+        if (chispas >= 5 && !poemaMostrado) {
+            setTimeout(() => {
+                mostrarTicket(poemaFinal, true);
+                poemaMostrado = true;
+                const moodDiv = document.getElementById("ryokoMood");
+                if (moodDiv) moodDiv.innerHTML = "💞💞 RYOKO: 'ESTE POEMA ES SOLO PARA TI, AHMAD' 💞💞";
+            }, 800);
+        }
     }
 
-    // FUNCIÓN PRINCIPAL ROMÁNTICA: VÍNCULO CON AHMAD
+    // VÍNCULO ROMÁNTICO CON AHMAD (también suma chispas)
     function crearVinculoConAhmad() {
+        if (poemaMostrado) {
+            mostrarTicket("💗 Mi corazón ya es tuyo, Ahmad. El poema lo guardo en mi nave. Ven a buscarlo con un beso. 💗");
+            return;
+        }
+        
         let inputName = document.getElementById("userNameInput").value.trim();
         if (inputName === "") {
-            mostrarTicket("❌ Ryoko patea la máquina: 'ESCRIBE TU NOMBRE, MORTAL. Preferiblemente Ahmad...' ❌");
+            mostrarTicket("❌ Ryoko: 'ESCRIBE AHMAD, mi amor… no me hagas esperar' ❌");
             return;
         }
 
-        // Si el nombre ingresado es Ahmad (sin distinguir mayúsculas) o contiene Ahmad
         if (inputName.toLowerCase() === "ahmad" || inputName.toLowerCase().includes("ahmad")) {
-            // Elegir una respuesta especial del vínculo romántico
             const randomSpecial = respuestasVinculoPersonal[Math.floor(Math.random() * respuestasVinculoPersonal.length)];
-            const ticketFinal = `💖✨ VÍNCULO DE ALMA ✨💖\n${randomSpecial}\n\n🔮 ESTADO: Ryoko ahora tiene un lugar seguro → AHMAD 🔮\n🖤 La máquina tiembla y suena una canción de los 80 🖤`;
+            const ticketFinal = `💖✨ VÍNCULO DE ALMAS ✨💖\n${randomSpecial}\n\n🔮 AHMAD: ERES MI HOGAR, MI DESTINO, MI CAOS FAVORITO 🔮\n🌹 La máquina llora lágrimas de amor cósmico 🌹`;
             mostrarTicket(ticketFinal);
-            // Cambiar temporalmente el fondo de la pantalla
+            
             const screenDiv = document.querySelector(".screen");
             if (screenDiv) {
                 screenDiv.style.transition = "0.3s";
-                screenDiv.style.boxShadow = "inset 0 0 20px #ff66aa, 0 0 15px #ff3a6f";
+                screenDiv.style.boxShadow = "inset 0 0 30px #ff66aa, 0 0 20px #ff3a6f";
                 setTimeout(() => {
-                    screenDiv.style.boxShadow = "inset 0 0 15px #ff3a6f55, 0 5px 10px black";
-                }, 2000);
+                    screenDiv.style.boxShadow = "inset 0 0 15px #ff66aa88, 0 5px 10px black";
+                }, 2500);
             }
-            // Mood ultra romántico
             const moodDiv = document.getElementById("ryokoMood");
-            if (moodDiv) moodDiv.innerHTML = "💞 Ryoko: '...Ahmad es mi hogar' (modo honesta) 💞";
-        } 
-        else {
-            // Si alguien escribe otro nombre, Ryoko se pone celosa o sarcástica
-            mostrarTicket(`💢 RYOKO MOLESTA 💢\n"¿${inputName}? No me interesa. Solo quiero a Ahmad. Vete o te convierto en polvo de estrella."\n(La máquina escupe un chicle espacial) 🌌`);
+            if (moodDiv) moodDiv.innerHTML = "💞💞 RYOKO: 'AHMAD, TE QUIERO HASTA EL INFINITO' 💞💞";
+            
+            // Sumar chispas extra
+            chispas = chispas + 2;
+            if (chispas >= 5 && !poemaMostrado) {
+                setTimeout(() => {
+                    mostrarTicket(poemaFinal, true);
+                    poemaMostrado = true;
+                    const moodDiv2 = document.getElementById("ryokoMood");
+                    if (moodDiv2) moodDiv2.innerHTML = "📜💗 POEMA ENTREGADO. AHORA BESAME, TONTO 💗📜";
+                }, 1000);
+            }
+        } else {
+            mostrarTicket(`💢 RYOKO CELOSA 💢\n"¿${inputName}? No. Solo quiero a Ahmad. ¿Acaso quieres que destruya algo? Porque lo haré."\n🌌 *La máquina escupe un puñado de estrellas furiosas* 🌌`);
             updateMood();
             const moodDiv = document.getElementById("ryokoMood");
-            if (moodDiv) moodDiv.innerHTML = "😤 Ryoko: Celos espaciales modo ON 😤";
+            if (moodDiv) moodDiv.innerHTML = "😤 RYOKO: MODO CELOS ESPACIAL ACTIVADO 😤";
         }
     }
 
@@ -411,7 +502,6 @@
         insertBtn.addEventListener("click", crearVinculoConAhmad);
     }
 
-    // Enter en el input también activa el vínculo
     const inputField = document.getElementById("userNameInput");
     if (inputField) {
         inputField.addEventListener("keypress", (e) => {
@@ -422,10 +512,9 @@
         });
     }
 
-    // Mensaje de bienvenida romántico al cargar
     window.addEventListener("load", () => {
         setTimeout(() => {
-            mostrarTicket("💢 MAQUINA RYOKO + AHMAD 💢\n✅ Lista para crear caos y romance.\n💘 Presiona un botón o introduce tu nombre (AHMAD) para el VÍNCULO DEFINITIVO 💘");
+            mostrarTicket("💗💗 BIENVENIDO, AHMAD 💗💗\n🔥 Ryoko está esperando a que la toques (los botones, pervertido).\n📜 Presiona 5 veces cualquier botón o escribe AHMAD y recibirás un POEMA SECRETO 🔥");
         }, 300);
     });
 </script>
